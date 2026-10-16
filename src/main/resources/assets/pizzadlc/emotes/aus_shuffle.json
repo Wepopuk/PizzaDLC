@@ -1,0 +1,482 @@
+{
+  "name": "AUS shuffle",
+  "author": "PizzaDLC",
+  "description": "Hand-keyed Minecraft adaptation: n_exodus_shuffle: 13–17 s",
+  "emote": {
+    "degrees": true,
+    "isLoop": true,
+    "beginTick": 0,
+    "endTick": 24,
+    "stopTick": 24,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "inOutSine",
+        "head": {
+          "x": -0.4,
+          "y": -0.5,
+          "z": -0.8715574274765816,
+          "pitch": -2.0,
+          "yaw": 4.199999999999999,
+          "roll": 0.8
+        },
+        "body": {
+          "x": -0.4,
+          "y": -0.5,
+          "z": 0,
+          "pitch": 5,
+          "yaw": -12,
+          "roll": 0.8
+        },
+        "rightArm": {
+          "x": -5.4,
+          "y": 1.5,
+          "z": 0,
+          "pitch": 25,
+          "yaw": -5,
+          "roll": 14
+        },
+        "leftArm": {
+          "x": 4.6,
+          "y": 1.5,
+          "z": 0,
+          "pitch": -45,
+          "yaw": 10,
+          "roll": -20
+        },
+        "rightLeg": {
+          "x": -2.3,
+          "y": 11.5,
+          "z": -2,
+          "pitch": -48,
+          "yaw": 0,
+          "roll": 4
+        },
+        "leftLeg": {
+          "x": 1.5,
+          "y": 11.5,
+          "z": 2,
+          "pitch": 10,
+          "yaw": 0,
+          "roll": -4
+        }
+      },
+      {
+        "tick": 3,
+        "easing": "inOutSine",
+        "head": {
+          "x": 0,
+          "y": 0.5,
+          "z": -0.0,
+          "pitch": 0.0,
+          "yaw": 2.0999999999999996,
+          "roll": 0
+        },
+        "body": {
+          "x": 0,
+          "y": 0.5,
+          "z": 0,
+          "pitch": 0,
+          "yaw": -6,
+          "roll": 0
+        },
+        "rightArm": {
+          "x": -5,
+          "y": 2.5,
+          "z": 0,
+          "pitch": 10,
+          "yaw": -5,
+          "roll": 12
+        },
+        "leftArm": {
+          "x": 5,
+          "y": 2.5,
+          "z": 0,
+          "pitch": -20,
+          "yaw": 5,
+          "roll": -12
+        },
+        "rightLeg": {
+          "x": -1.9,
+          "y": 12.5,
+          "z": -4,
+          "pitch": -8,
+          "yaw": 0,
+          "roll": 14.590392690033894
+        },
+        "leftLeg": {
+          "x": 1.9,
+          "y": 12.5,
+          "z": 3,
+          "pitch": 18,
+          "yaw": 0,
+          "roll": 0
+        }
+      },
+      {
+        "tick": 6,
+        "easing": "inOutSine",
+        "head": {
+          "x": 0.4,
+          "y": -1.5,
+          "z": -0.8715574274765816,
+          "pitch": -2.0,
+          "yaw": -4.199999999999999,
+          "roll": -0.8
+        },
+        "body": {
+          "x": 0.4,
+          "y": -1.5,
+          "z": 0,
+          "pitch": 5,
+          "yaw": 12,
+          "roll": -0.8
+        },
+        "rightArm": {
+          "x": -4.6,
+          "y": 0.5,
+          "z": 0,
+          "pitch": -45,
+          "yaw": -10,
+          "roll": 20
+        },
+        "leftArm": {
+          "x": 5.4,
+          "y": 0.5,
+          "z": 0,
+          "pitch": 25,
+          "yaw": 5,
+          "roll": -14
+        },
+        "rightLeg": {
+          "x": -1.5,
+          "y": 10.5,
+          "z": 2,
+          "pitch": 10,
+          "yaw": 0,
+          "roll": 4
+        },
+        "leftLeg": {
+          "x": 2.3,
+          "y": 10.5,
+          "z": -2,
+          "pitch": -48,
+          "yaw": 0,
+          "roll": -4
+        }
+      },
+      {
+        "tick": 9,
+        "easing": "inOutSine",
+        "head": {
+          "x": 0,
+          "y": 0.5,
+          "z": -0.0,
+          "pitch": 0.0,
+          "yaw": -2.0999999999999996,
+          "roll": 0
+        },
+        "body": {
+          "x": 0,
+          "y": 0.5,
+          "z": 0,
+          "pitch": 0,
+          "yaw": 6,
+          "roll": 0
+        },
+        "rightArm": {
+          "x": -5,
+          "y": 2.5,
+          "z": 0,
+          "pitch": -20,
+          "yaw": -5,
+          "roll": 12
+        },
+        "leftArm": {
+          "x": 5,
+          "y": 2.5,
+          "z": 0,
+          "pitch": 10,
+          "yaw": 5,
+          "roll": -12
+        },
+        "rightLeg": {
+          "x": -1.9,
+          "y": 12.5,
+          "z": 3,
+          "pitch": 18,
+          "yaw": 0,
+          "roll": 0
+        },
+        "leftLeg": {
+          "x": 1.9,
+          "y": 12.5,
+          "z": -4,
+          "pitch": -8,
+          "yaw": 0,
+          "roll": -14.590392690033894
+        }
+      },
+      {
+        "tick": 12,
+        "easing": "inOutSine",
+        "head": {
+          "x": -0.5,
+          "y": -1.5,
+          "z": -0.0,
+          "pitch": 0.0,
+          "yaw": 5.25,
+          "roll": 1.0
+        },
+        "body": {
+          "x": -0.5,
+          "y": -1.5,
+          "z": 0,
+          "pitch": 0,
+          "yaw": -15,
+          "roll": 1.0
+        },
+        "rightArm": {
+          "x": -5.5,
+          "y": 0.5,
+          "z": 0,
+          "pitch": 20,
+          "yaw": -5,
+          "roll": 18
+        },
+        "leftArm": {
+          "x": 4.5,
+          "y": 0.5,
+          "z": 0,
+          "pitch": -40,
+          "yaw": 10,
+          "roll": -18
+        },
+        "rightLeg": {
+          "x": -2.4,
+          "y": 10.5,
+          "z": -2,
+          "pitch": -45,
+          "yaw": 0,
+          "roll": 5
+        },
+        "leftLeg": {
+          "x": 1.4,
+          "y": 10.5,
+          "z": 2,
+          "pitch": 15,
+          "yaw": 0,
+          "roll": -3
+        }
+      },
+      {
+        "tick": 15,
+        "easing": "inOutSine",
+        "head": {
+          "x": -0.3,
+          "y": 0.5,
+          "z": -0.0,
+          "pitch": 0.0,
+          "yaw": 7.699999999999999,
+          "roll": 0.6
+        },
+        "body": {
+          "x": -0.3,
+          "y": 0.5,
+          "z": 0,
+          "pitch": 0,
+          "yaw": -22,
+          "roll": 0.6
+        },
+        "rightArm": {
+          "x": -5.3,
+          "y": 2.5,
+          "z": 0,
+          "pitch": -20,
+          "yaw": -10,
+          "roll": 20
+        },
+        "leftArm": {
+          "x": 4.7,
+          "y": 2.5,
+          "z": 0,
+          "pitch": 10,
+          "yaw": 5,
+          "roll": -18
+        },
+        "rightLeg": {
+          "x": -3.1999999999999997,
+          "y": 12.5,
+          "z": 0,
+          "pitch": 0,
+          "yaw": 25,
+          "roll": 16.59784213586655
+        },
+        "leftLeg": {
+          "x": 2.5999999999999996,
+          "y": 12.5,
+          "z": 0,
+          "pitch": 0,
+          "yaw": -25,
+          "roll": -16.59784213586655
+        }
+      },
+      {
+        "tick": 18,
+        "easing": "inOutSine",
+        "head": {
+          "x": 0.5,
+          "y": -1,
+          "z": -0.0,
+          "pitch": 0.0,
+          "yaw": -6.3,
+          "roll": -1.0
+        },
+        "body": {
+          "x": 0.5,
+          "y": -1,
+          "z": 0,
+          "pitch": 0,
+          "yaw": 18,
+          "roll": -1.0
+        },
+        "rightArm": {
+          "x": -4.5,
+          "y": 1,
+          "z": 0,
+          "pitch": -40,
+          "yaw": -10,
+          "roll": 18
+        },
+        "leftArm": {
+          "x": 5.5,
+          "y": 1,
+          "z": 0,
+          "pitch": 20,
+          "yaw": 5,
+          "roll": -18
+        },
+        "rightLeg": {
+          "x": -1.4,
+          "y": 11,
+          "z": 2,
+          "pitch": 15,
+          "yaw": 0,
+          "roll": 3
+        },
+        "leftLeg": {
+          "x": 2.4,
+          "y": 11,
+          "z": -2,
+          "pitch": -45,
+          "yaw": 0,
+          "roll": -5
+        }
+      },
+      {
+        "tick": 21,
+        "easing": "inOutSine",
+        "head": {
+          "x": 0.3,
+          "y": 0.5,
+          "z": -0.0,
+          "pitch": 0.0,
+          "yaw": -7.699999999999999,
+          "roll": -0.6
+        },
+        "body": {
+          "x": 0.3,
+          "y": 0.5,
+          "z": 0,
+          "pitch": 0,
+          "yaw": 22,
+          "roll": -0.6
+        },
+        "rightArm": {
+          "x": -4.7,
+          "y": 2.5,
+          "z": 0,
+          "pitch": 10,
+          "yaw": -5,
+          "roll": 18
+        },
+        "leftArm": {
+          "x": 5.3,
+          "y": 2.5,
+          "z": 0,
+          "pitch": -20,
+          "yaw": 10,
+          "roll": -20
+        },
+        "rightLeg": {
+          "x": -0.5999999999999999,
+          "y": 12.5,
+          "z": 0,
+          "pitch": 0,
+          "yaw": -25,
+          "roll": -16.59784213586655
+        },
+        "leftLeg": {
+          "x": 1.1999999999999997,
+          "y": 12.5,
+          "z": 0,
+          "pitch": 0,
+          "yaw": 25,
+          "roll": 16.59784213586655
+        }
+      },
+      {
+        "tick": 24,
+        "easing": "inOutSine",
+        "head": {
+          "x": -0.4,
+          "y": -0.5,
+          "z": -0.8715574274765816,
+          "pitch": -2.0,
+          "yaw": 4.199999999999999,
+          "roll": 0.8
+        },
+        "body": {
+          "x": -0.4,
+          "y": -0.5,
+          "z": 0,
+          "pitch": 5,
+          "yaw": -12,
+          "roll": 0.8
+        },
+        "rightArm": {
+          "x": -5.4,
+          "y": 1.5,
+          "z": 0,
+          "pitch": 25,
+          "yaw": -5,
+          "roll": 14
+        },
+        "leftArm": {
+          "x": 4.6,
+          "y": 1.5,
+          "z": 0,
+          "pitch": -45,
+          "yaw": 10,
+          "roll": -20
+        },
+        "rightLeg": {
+          "x": -2.3,
+          "y": 11.5,
+          "z": -2,
+          "pitch": -48,
+          "yaw": 0,
+          "roll": 4
+        },
+        "leftLeg": {
+          "x": 1.5,
+          "y": 11.5,
+          "z": 2,
+          "pitch": 10,
+          "yaw": 0,
+          "roll": -4
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+accessWidener v2 official
+
+# Custom settings rows retain Minecraft option metadata and delayed-save behavior.
+accessible class net/minecraft/client/gui/components/OptionsList$AbstractEntry
+accessible class net/minecraft/client/gui/components/OptionsList$Entry
+
+# ESP through-walls: свой no-depth RenderType
+accessible class net/minecraft/client/renderer/rendertype/RenderSetup$TextureBinding
+accessible method net/minecraft/client/renderer/rendertype/RenderType create (Ljava/lang/String;Lnet/minecraft/client/renderer/rendertype/RenderSetup;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+accessible field net/minecraft/client/renderer/RenderPipelines LINES_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+accessible field net/minecraft/client/renderer/RenderPipelines DEBUG_FILLED_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+
+# TargetESP: additive no-depth textured RenderType из TEXT_SNIPPET
+accessible field net/minecraft/client/renderer/RenderPipelines TEXT_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+
+# Account switcher: подмена сессии в рантайме
+accessible field net/minecraft/client/Minecraft user Lnet/minecraft/client/User;
+mutable field net/minecraft/client/Minecraft user Lnet/minecraft/client/User;
+accessible field net/minecraft/client/Minecraft profileFuture Ljava/util/concurrent/CompletableFuture;
+mutable field net/minecraft/client/Minecraft profileFuture Ljava/util/concurrent/CompletableFuture;
+
+# KillAura: чтение серверного состояния спринта (крит-тайминг)
+accessible field net/minecraft/client/player/LocalPlayer wasSprinting Z
+
+# Silent-use: корректный sequence в ServerboundUseItemPacket. Grim BadPacketsH требует монотонности
+# (expected = lastSequence+1); хардкод 0 флагал. Номер берём так же, как ваниль в MultiPlayerGameMode.startPrediction.
+accessible method net/minecraft/client/multiplayer/ClientLevel getBlockStatePredictionHandler ()Lnet/minecraft/client/multiplayer/prediction/BlockStatePredictionHandler;
+
+# NoDelay: обнуление ванильных задержек прыжка/юза/копания
+accessible field net/minecraft/world/entity/LivingEntity noJumpDelay I
+accessible field net/minecraft/client/Minecraft rightClickDelay I
+accessible field net/minecraft/client/multiplayer/MultiPlayerGameMode destroyDelay I

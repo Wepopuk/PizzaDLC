@@ -1,0 +1,298 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.17.12'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    // ONNX Runtime (нейронка для аим-гуманизатора), вместо вложенного META-INF/jars/onnxruntime-1.20.0.jar
+    implementation "com.microsoft.onnxruntime:onnxruntime:${project.onnxruntime_version}"
+
+    // только аннотация @Generated из декомпилированных сорсов
+    compileOnly "org.projectlombok:lombok:${project.lombok_version}"
+
+    // Lua-рантайм для AnimatedHands (порт Hold My Items), вшивается в jar
+    implementation files('libs/luaj-jse-3.0.1.jar')
+}
+
+jar {
+    from(zipTree('libs/luaj-jse-3.0.1.jar')) {
+        exclude 'META-INF/**'
+        // Lua classes are shaded into PizzaDLC; keep PizzaDLC's own mod metadata.
+        exclude 'fabric.mod.json'
+    }
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/pizzadlc.accesswidener")
+}
+
+def targetJavaVersion = project.target_java_version.toInteger()
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = 'UTF-8'
+    it.options.release.set(targetJavaVersion)
+    it.options.compilerArgs << '-Xmaxerrs' << '10000' << '-Xmaxwarns' << '10000'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+    withSourcesJar()
+}
+
+sourceSets {
+    verification {
+        java.srcDir('src/verification/java')
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+}
+
+tasks.register('verifyCleanRenderScope', JavaExec) {
+    group = 'verification'
+    description = 'Checks clean capture isolation, camera interpolation, and persisted module state.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.CleanRenderScopeCheck'
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('verifyCleanRenderScope')
+}
+
+tasks.register('verifyEmoteCatalog', JavaExec) {
+    group = 'verification'
+    description = 'Checks bundled emotes, loop continuity and paged wheel selection.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.EmoteCatalogCheck'
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('verifyEmoteCatalog')
+}
+
+tasks.register('verifyImportedModels', JavaExec) {
+    group = 'verification'
+    description = 'Checks imported GLB geometry, textures and limb skinning.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.ImportedModelsCheck'
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('verifyImportedModels')
+}
+
+tasks.register('verifyAccountDetails', JavaExec) {
+    group = 'verification'
+    description = 'Checks legacy accounts, notes and encrypted server passwords.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.AccountDetailsCheck'
+    workingDir = layout.buildDirectory.dir('account-check').get().asFile
+    doFirst { workingDir.mkdirs() }
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('verifyAccountDetails')
+}
+
+tasks.register('verifyClientLanguages', JavaExec) {
+    group = 'verification'
+    description = 'Checks language persistence, first launch, resources and scaled picker selection.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.ClientLanguageCheck'
+    workingDir = layout.buildDirectory.dir('language-check').get().asFile
+    doFirst { workingDir.mkdirs() }
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('verifyClientLanguages')
+}
+
+tasks.register('verifyMovementAnimations', JavaExec) {
+    group = 'verification'
+    description = 'Checks sprint and basketball jump poses, transitions and legacy hand settings.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.MovementAnimationCheck'
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('verifyMovementAnimations')
+}
+
+tasks.register('verifyOptionControls', JavaExec) {
+    group = 'verification'
+    description = 'Checks custom settings columns, drag mapping, translated units and Minecraft UI hooks.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.OptionControlsCheck'
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('verifyOptionControls')
+}
+
+tasks.register('verifyOptionRendering', JavaExec) {
+    group = 'verification'
+    description = 'Checks real Minecraft GUI drawing commands for overlapping settings and localized fonts.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.OptionRenderingCheck'
+    workingDir = layout.buildDirectory.dir('settings-render-check').get().asFile
+    doFirst { workingDir.mkdirs() }
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('verifyOptionRendering')
+}
+
+tasks.register('verifyArmorCit', JavaExec) {
+    group = 'verification'
+    description = 'Checks Coffee pack loading, armor enchantments, durability ranges and pack reloads.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.ArmorCitCheck'
+}
+
+tasks.register('verifyCombatModules', JavaExec) {
+    group = 'verification'
+    description = 'Checks imported combat settings, flight physics, lifecycle and Minecraft 26.2 injection targets.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.CombatModulesCheck'
+}
+
+tasks.named('check') { dependsOn tasks.named('verifyCombatModules') }
+
+tasks.named('check') {
+    dependsOn tasks.named('verifyArmorCit')
+}
+
+tasks.register('verifyAutoTotem', JavaExec) {
+    group = 'verification'
+    description = 'Checks native AutoTotem threats, offhand swaps, original item restoration and lifecycle.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.AutoTotemCheck'
+}
+tasks.named('check') { dependsOn tasks.named('verifyAutoTotem') }
+
+
+tasks.register('verifyInventoryFlight', JavaExec) {
+    group = 'verification'
+    description = 'Checks queued swaps, aimed pearl packets, elytra swap/takeoff and ground retarget flight.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.InventoryFlightCheck'
+}
+tasks.named('check') { dependsOn tasks.named('verifyInventoryFlight') }
+
+
+tasks.register('verifyAnchorPlacement', JavaExec) {
+    group = 'verification'
+    description = 'Checks anchor terrain exclusions, excavation/crystal reservations and sequence cancellation.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.AnchorPlacementCheck'
+}
+tasks.named('check') { dependsOn tasks.named('verifyAnchorPlacement') }
+
+tasks.register('verifyGpsNavigation', JavaExec) {
+    group = 'verification'
+    description = 'Checks camera-relative GPS bearings, distances, command parsing and navigation lifecycle.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.GpsNavigationCheck'
+}
+tasks.named('check') { dependsOn tasks.named('verifyGpsNavigation') }
+
+tasks.register('verifyGpsVoices', JavaExec) {
+    group = 'verification'
+    description = 'Decodes bundled Yandex GPS voice clips with the Minecraft Vorbis reader.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.GpsVoiceCheck'
+}
+tasks.named('check') { dependsOn tasks.named('verifyGpsVoices') }
+
+tasks.register('verifyAkrienOld', JavaExec) {
+    group = 'verification'
+    description = 'Checks textured ESP selection, isolation and preservation of native player/armor pipelines.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.AkrienOldCheck'
+}
+tasks.named('check') { dependsOn tasks.named('verifyAkrienOld') }
+
+
+tasks.register('verifyNeuro', JavaExec) {
+    group = 'verification'
+    description = 'Checks learned TCN parity, visible camera, commands, manual isolation, bots and world lifecycle.'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.NeuroCheck'
+    systemProperty 'pizzadlc.neuro.processCheck', project.hasProperty('neuroProcessCheck')
+    if (project.hasProperty('neuroModelCheck')) {
+        systemProperty 'pizzadlc.neuro.checkModel', project.property('neuroModelCheck')
+        systemProperty 'pizzadlc.neuro.checkRoot', rootProject.file('run/pizzadlc/neuro').absolutePath
+    }
+}
+tasks.named('check') { dependsOn tasks.named('verifyNeuro') }
+
+
+tasks.register('neuroClientTestMod', Jar) {
+    dependsOn tasks.named('verificationClasses')
+    archiveFileName = 'neuro-client-check.jar'
+    destinationDirectory = layout.buildDirectory.dir('neuro-client-test')
+    from sourceSets.verification.output
+    from 'src/clientVerification/resources'
+}
+if (project.hasProperty('neuroClientTest')) {
+    loom.runs.named('client') { runDir('build/neuro-client-test/game') }
+    tasks.named('runClient') {
+        dependsOn tasks.named('neuroClientTestMod')
+        workingDir = layout.buildDirectory.dir('neuro-client-test/game').get().asFile
+        if (project.hasProperty('neuroLiveTrainingCheck')) {
+            if (project.hasProperty('neuroLiveModel')) jvmArgs '-Dpizzadlc.neuro.liveModel=' + project.property('neuroLiveModel')
+            jvmArgs '-Dpizzadlc.neuro.liveCheck=true', '-Dpizzadlc.neuro.python=' + rootProject.file('.neuro-runtime/Scripts/python.exe').absolutePath
+        }
+        jvmArgs '-Dfabric.client.gametest', '-Dfabric.client.gametest.modid=neuro-verification',
+            '-Dfabric.addMods=' + layout.buildDirectory.file('neuro-client-test/neuro-client-check.jar').get().asFile.absolutePath
+        doFirst {
+            workingDir.mkdirs()
+            def testArgs = new ArrayList(args)
+            def index = testArgs.indexOf('--gameDir')
+            if (index >= 0) testArgs[index + 1] = workingDir.absolutePath
+            else testArgs.addAll(['--gameDir', workingDir.absolutePath])
+            testArgs.addAll(['--width', '960', '--height', '640'])
+            setArgs(testArgs)
+        }
+    }
+}
+
+ tasks.register('verifyClientDataMigration', JavaExec) {
+    group = 'verification'
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'pizza.dlc.ClientDataMigrationCheck'
+}
+tasks.named('check') { dependsOn tasks.named('verifyClientDataMigration') }

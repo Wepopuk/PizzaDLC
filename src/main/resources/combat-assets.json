@@ -1,0 +1,166 @@
+[
+  {
+    "path": "icons/world_render/bloom.png",
+    "sha256": "676971112bc8e9cccf99d25ba1b446c7fec2657910c581b64e4e0216defecd71"
+  },
+  {
+    "path": "icons/world_render/firepart2.png",
+    "sha256": "a3dae16afbdd1f741c063c6663d603f4f181e0905fe93203d795f161f57832ab"
+  },
+  {
+    "path": "icons/world_render/target.png",
+    "sha256": "e8a9589169c550bfae7811bab9a11daf3416f6933542219a0f5dc3ee34107b10"
+  },
+  {
+    "path": "icons/world_render/target1.png",
+    "sha256": "396f60937c48cbca5a659a2d73c1373f0af81c7ba55da8859b9dca091f3f39c8"
+  },
+  {
+    "path": "images/particles/bloom.png",
+    "sha256": "d235426ae0ac4de3a2168d0c99381020af5dc79619d31ebebd403609cd5f5ada"
+  },
+  {
+    "path": "images/private/glow.png",
+    "sha256": "33af7dd59796dbe59164573f8a82bc3de91895178d01f0a19caed05c1cb1c830"
+  },
+  {
+    "path": "images/targetesp/glow.png",
+    "sha256": "a3f1883ceceeab3f39d69b206c796569da7205b7aee3b7267597a51bc44cc99b"
+  },
+  {
+    "path": "shaders/core/dead_chams.fsh",
+    "sha256": "cb482b8b12890f432dd79be743b957f9b614f4d496187d012d32525bb850d7e1"
+  },
+  {
+    "path": "shaders/core/dead_chams.vsh",
+    "sha256": "34d5ba2409293e7d4db3f6a3d5eda4738ff67a7ad5d08df19b338c6aec69ee40"
+  },
+  {
+    "path": "shaders/core/entity_esp_gaussian_blur.fsh",
+    "sha256": "9e4c2b8601f76a062bb17a88c35bbdbfbe7e75fb07eb63905ac997365f3f1a40"
+  },
+  {
+    "path": "shaders/core/entity_esp_mask.fsh",
+    "sha256": "8729dadc3257d59880a390088240351a354ff0501513cebf67e453e3cb9353fc"
+  },
+  {
+    "path": "shaders/core/entity_esp_outer_glow.fsh",
+    "sha256": "eb3449c415e4857c21cd7aaf0b510702e509403a9ecc5083f78792729260a0a2"
+  },
+  {
+    "path": "shaders/core/hands_fullscreen.vsh",
+    "sha256": "34a15827bc5da64f19a71fd70409dd9a9f90c76a6cbd2c1f120be1d5654c3d0d"
+  },
+  {
+    "path": "shaders/core/nightix_cube.fsh",
+    "sha256": "4cd9288b7fec2ec6905e8a35c7884caefdd476e4ab225e35c86a6bcbb539baa6"
+  },
+  {
+    "path": "shaders/core/nightix_cube.vsh",
+    "sha256": "bfee2def14acad670beeb447ce6cd37e431c612d0c3b06361989c66ed39c7a5e"
+  },
+  {
+    "path": "shaders/core/nightix_cube_glow.fsh",
+    "sha256": "b2517d6c59ae9e7687c151175dbcb1c09f5e8ea23ee4d381b1da0bc1165df544"
+  },
+  {
+    "path": "shaders/core/nightix_cube_glow.vsh",
+    "sha256": "54c4a1dd87b26531cf19240a3a95867a9ecb4cab57a39cf9bcfa4f272732b29f"
+  },
+  {
+    "path": "shaders/core/private_glow.fsh",
+    "sha256": "7f3306f89218db2b9eff89b97c705e0c7f699d02a282dc415541407589ca02ef"
+  },
+  {
+    "path": "shaders/core/target_esp_crystal.fsh",
+    "sha256": "1f23d0b90d3a71c069763642c1f07ff67db0311a127a1a458c9c77537e195f79"
+  },
+  {
+    "path": "shaders/core/target_esp_crystal.vsh",
+    "sha256": "3c7ff89ec2d2d3d212481ca5d24001a1fb5fba601c0445168bfc268cceebbc55"
+  },
+  {
+    "path": "shaders/core/target_esp_cube.fsh",
+    "sha256": "bb5f76785f2f00725ca533e22db3832a5b4def1876bb66bf998b5ccf06ec5b17"
+  },
+  {
+    "path": "shaders/core/target_esp_cube.vsh",
+    "sha256": "3c7ff89ec2d2d3d212481ca5d24001a1fb5fba601c0445168bfc268cceebbc55"
+  },
+  {
+    "path": "shaders/core/target_esp_cube_composite.fsh",
+    "sha256": "73ee8856ee8d6cdabc0606d4fe220be7bb6feaa11e70f251f8b67d5737f8912a"
+  },
+  {
+    "path": "shaders/core/target_esp_lightning.fsh",
+    "sha256": "e153405867ccf3fd5a67bb0681aaed07c1fab5c7b690d019701de12053113fb4"
+  },
+  {
+    "path": "shaders/core/target_esp_lightning.vsh",
+    "sha256": "34d5ba2409293e7d4db3f6a3d5eda4738ff67a7ad5d08df19b338c6aec69ee40"
+  },
+  {
+    "path": "shaders/core/target_esp_lightning_core.fsh",
+    "sha256": "3588e54316fe6b55a98c80f4a50eb1dc7e02aa1985abc63c60ac611860d75d33"
+  },
+  {
+    "path": "shaders/core/target_esp_orbit_glow.fsh",
+    "sha256": "5844c3348934c151f831816153544320836459ae060618cca1ac6df8de424e8a"
+  },
+  {
+    "path": "shaders/core/target_esp_orbit_glow.vsh",
+    "sha256": "34d5ba2409293e7d4db3f6a3d5eda4738ff67a7ad5d08df19b338c6aec69ee40"
+  },
+  {
+    "path": "shaders/core/target_esp_pentagram.fsh",
+    "sha256": "2f34855c886e363781cd4b381f6d39e35778c722e4886281e369c6cf1f6141c5"
+  },
+  {
+    "path": "shaders/core/target_esp_pentagram.vsh",
+    "sha256": "34d5ba2409293e7d4db3f6a3d5eda4738ff67a7ad5d08df19b338c6aec69ee40"
+  },
+  {
+    "path": "shaders/core/target_esp_rhomb_distortion.fsh",
+    "sha256": "5eda3062454e97c47b52ab43c96a9e2614ca2fa55f92feca4a12b8ec008e1159"
+  },
+  {
+    "path": "shaders/core/target_esp_rhomb_distortion_mask.fsh",
+    "sha256": "96b3f85dc838033f3170c3ee72e4de24958e0b35705f1f883cf4cfd321f7e2a4"
+  },
+  {
+    "path": "shaders/core/target_esp_ring.fsh",
+    "sha256": "ab06f732ba47863144d21deec5cdcdd5b395a389947324cd69a814b40f58069d"
+  },
+  {
+    "path": "shaders/core/target_esp_ring.vsh",
+    "sha256": "34d5ba2409293e7d4db3f6a3d5eda4738ff67a7ad5d08df19b338c6aec69ee40"
+  },
+  {
+    "path": "shaders/core/target_surface_light.fsh",
+    "sha256": "f74fd557dca3237e6be642f2ebd6a7bf019d60ebd6e2406a53df74ad3ace7094"
+  },
+  {
+    "path": "shaders/core/zenith_target_esp.fsh",
+    "sha256": "c2553cbe42c34be29d716e8321fbe740eb883a2569d8839b75980284c415bff7"
+  },
+  {
+    "path": "shaders/core/zenith_target_esp.vsh",
+    "sha256": "7cd99ccf88b1844bde9fc385036c595e10314dc68baec1dde6ee99dfe6724693"
+  },
+  {
+    "path": "textures/nightix/particles_1.png",
+    "sha256": "a3c98dd8b613061c1f65914d20a13770d4d82d21fe70e7bf1ec9e6d4683c00f5"
+  },
+  {
+    "path": "textures/nightix/particles_2.png",
+    "sha256": "2b50e917f76b369055a0440af13f83da681fea6793ea990e45940f4a567a0ca0"
+  },
+  {
+    "path": "textures/targetesp/lightning_arc.png",
+    "sha256": "751579d9573a990db260411b83b1e980b6d611b1fc0c2f30b33cd1a4622850f7"
+  },
+  {
+    "path": "textures/targetesp/zenith_ghost.png",
+    "sha256": "a3f1883ceceeab3f39d69b206c796569da7205b7aee3b7267597a51bc44cc99b"
+  }
+]

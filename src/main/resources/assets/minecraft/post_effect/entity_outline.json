@@ -1,0 +1,34 @@
+{
+    "__comment": "ShaderESP override: PASSTHROUGH (identity). Оставляем в entity_outline СЫРОЙ ЗАЛИТЫЙ силуэт (не превращаем в грани) — блюр/направление/контур делает ShaderEspGlow в рантайме. Копия через swap, т.к. read+write одного таргета в одном пассе не определён.",
+    "targets": {
+        "swap": {}
+    },
+    "passes": [
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "minecraft:post/blit",
+            "inputs": [
+                { "sampler_name": "In", "target": "minecraft:entity_outline" }
+            ],
+            "uniforms": {
+                "BlitConfig": [
+                    { "name": "ColorModulate", "type": "vec4", "value": [ 1.0, 1.0, 1.0, 1.0 ] }
+                ]
+            },
+            "output": "swap"
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "minecraft:post/blit",
+            "inputs": [
+                { "sampler_name": "In", "target": "swap" }
+            ],
+            "uniforms": {
+                "BlitConfig": [
+                    { "name": "ColorModulate", "type": "vec4", "value": [ 1.0, 1.0, 1.0, 1.0 ] }
+                ]
+            },
+            "output": "minecraft:entity_outline"
+        }
+    ]
+}

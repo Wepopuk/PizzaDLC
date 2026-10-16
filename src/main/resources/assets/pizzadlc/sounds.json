@@ -1,0 +1,133 @@
+{
+  "toggle": {
+    "sounds": [
+      "pizzadlc:toggle"
+    ]
+  },
+  "chaos": {
+    "sounds": [
+      "pizzadlc:chaos"
+    ]
+  },
+  "peanut": {
+    "sounds": [
+      "pizzadlc:peanut"
+    ]
+  },
+  "s9_notification": {
+    "sounds": [
+      "pizzadlc:s9_notification"
+    ]
+  },
+  "tonos": {
+    "sounds": [
+      "pizzadlc:tonos"
+    ]
+  },
+  "haze_notification": {
+    "sounds": [
+      "pizzadlc:haze_notification"
+    ]
+  },
+  "hint_notification": {
+    "sounds": [
+      "pizzadlc:hint_notification"
+    ]
+  },
+  "gps.alice.start": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/alice/start",
+        "stream": true
+      }
+    ]
+  },
+  "gps.alice.straight": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/alice/straight",
+        "stream": true
+      }
+    ]
+  },
+  "gps.alice.left": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/alice/left",
+        "stream": true
+      }
+    ]
+  },
+  "gps.alice.right": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/alice/right",
+        "stream": true
+      }
+    ]
+  },
+  "gps.alice.uturn": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/alice/uturn",
+        "stream": true
+      }
+    ]
+  },
+  "gps.alice.arrived": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/alice/arrived",
+        "stream": true
+      }
+    ]
+  },
+  "gps.oksana.start": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/oksana/start",
+        "stream": true
+      }
+    ]
+  },
+  "gps.oksana.straight": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/oksana/straight",
+        "stream": true
+      }
+    ]
+  },
+  "gps.oksana.left": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/oksana/left",
+        "stream": true
+      }
+    ]
+  },
+  "gps.oksana.right": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/oksana/right",
+        "stream": true
+      }
+    ]
+  },
+  "gps.oksana.uturn": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/oksana/uturn",
+        "stream": true
+      }
+    ]
+  },
+  "gps.oksana.arrived": {
+    "sounds": [
+      {
+        "name": "pizzadlc:gps/oksana/arrived",
+        "stream": true
+      }
+    ]
+  }
+}

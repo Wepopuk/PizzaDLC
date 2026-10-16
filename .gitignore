@@ -1,0 +1,41 @@
+# Gradle, Python and editor caches
+/.gradle/
+/.gradle-home/
+/build/
+/.neuro-runtime/
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+*.iml
+
+# Local game data: accounts, passwords, configs and personal training data
+/run/
+/pizzadlc/
+/calcite/
+/logs/
+*.log
+.env
+.env.*
+*.pem
+*.key
+
+# Reference projects, archives and local backups
+/backup/
+/pasting/
+/crystallaura/
+/nofall/
+/volon/
+/figma-assets/
+/*.zip
+/compile_out.txt
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Installed model conversion dependencies and reference video downloads
+tools/.model-import-deps/
+tools/dance-references/*
+!tools/dance-references/README.md

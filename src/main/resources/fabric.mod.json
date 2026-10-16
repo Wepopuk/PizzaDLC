@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "pizzadlc",
+  "version": "1.0-SNAPSHOT",
+  "name": "PizzaDLC",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "accessWidener": "pizzadlc.accesswidener",
+  "entrypoints": {
+    "fabric-datagen": [
+      "pizza.dlc.client.PizzaDLCDataGenerator"
+    ],
+    "client": [
+      "pizza.dlc.client.PizzaDLCClient"
+    ],
+    "main": [
+      "pizza.dlc.PizzaDLC"
+    ]
+  },
+  "mixins": [
+    "pizzadlc.mixins.json",
+    {
+      "config": "pizzadlc.client.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "zakoopt.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "fabric-api": "*",
+    "minecraft": ">=26.2"
+  }
+}

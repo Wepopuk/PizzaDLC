@@ -1,0 +1,78 @@
+{
+  "source": "yandex_navigator_all_voices_250421.scs",
+  "sourceSha256": "fd09a6c3bfdce13311c052619aee3f170af21cb3f27a86a1c778059a1e085da4",
+  "voices": {
+    "alice": {
+      "bank": "sound/navigation/yandex_russian_alice.bank",
+      "bankSha256": "490a66f3d6fa875b5559e2bf3b1a0ab879c623a36a50a396c5c149c9e4b45c88",
+      "clips": {
+        "start": {
+          "sample": "start_1",
+          "stream": 26,
+          "sha256": "353da22fd2b96397489371adbe3dee5424c023f12cec8397159f1e03fcbd4b64"
+        },
+        "straight": {
+          "sample": "go_straight",
+          "stream": 41,
+          "sha256": "e9c15398b56ffb1d6afb5d6785cd43e8954221b03412c54391c0ea17b486760a"
+        },
+        "left": {
+          "sample": "turn_left",
+          "stream": 4,
+          "sha256": "78ac1a70f8e4d57c4207d14bb698db2974451390f74705f14db4010da8301f25"
+        },
+        "right": {
+          "sample": "turn_right",
+          "stream": 13,
+          "sha256": "304bf8403eb8ccf894107e8cce5fd66d2091db0d5c368cc8351af13dff480926"
+        },
+        "uturn": {
+          "sample": "u_turn",
+          "stream": 43,
+          "sha256": "c627d146c4e27f00c34ddafbe777daa775e8137d8b72b7493b8ef8a8b0cda00e"
+        },
+        "arrived": {
+          "sample": "finish_1",
+          "stream": 44,
+          "sha256": "49c8853de8019289a7581cd58430ae0988dc26c0e659d5902f9b11de5eb6c1c5"
+        }
+      }
+    },
+    "oksana": {
+      "bank": "sound/navigation/yandex_russian_oksana.bank",
+      "bankSha256": "2f53b8dd18095bf1265bce21ffb28f91cd294a286aed62ab253e0120e74ec79a",
+      "clips": {
+        "start": {
+          "sample": "start",
+          "stream": 5,
+          "sha256": "250dffdad089a91baee917cf061d9c88aa3e9eaa581f59fe43741e1e74b85688"
+        },
+        "straight": {
+          "sample": "go_straight",
+          "stream": 21,
+          "sha256": "ac06f304f906be8a7322bb7ebf0bbfb4aa3918a14440ef92582b60f4698c8894"
+        },
+        "left": {
+          "sample": "turn_left",
+          "stream": 12,
+          "sha256": "14f894a9fe7a24a03b72d29584b29e24053f003abcdf61175071548c32fcdd07"
+        },
+        "right": {
+          "sample": "turn_right",
+          "stream": 3,
+          "sha256": "afc150af693d98388c04566c0e05644e5c51118fc3bcce845a4be2d031576b75"
+        },
+        "uturn": {
+          "sample": "u_turn",
+          "stream": 22,
+          "sha256": "9c30886d7edeefc2e4969ae1d589b7d9a80e5714ddeb2e229745ac66c1864168"
+        },
+        "arrived": {
+          "sample": "finish",
+          "stream": 35,
+          "sha256": "697873fcde21d570f1b1be36752c92570bf7351db50f1a88a459e7ca57e39462"
+        }
+      }
+    }
+  }
+}

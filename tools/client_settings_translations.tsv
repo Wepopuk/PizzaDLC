@@ -1,0 +1,412 @@
+2D Бокс|2D Box|2D Бокс|Ramka 2D|2D-Box
+3D Бокс|3D Box|3D Бокс|Ramka 3D|3D-Box
+ArrayList: режим модуля|Module list: mode|Список модулів: режим|Lista modułów: tryb|Modulliste: Modus
+ArrayList: с маленькой буквы|Module list: lowercase|Список модулів: малі літери|Lista modułów: małe litery|Modulliste: Kleinbuchstaben
+ArrayList: скрыть категории|Module list: hidden categories|Список модулів: приховані категорії|Lista modułów: ukryte kategorie|Modulliste: verborgene Kategorien
+Elytra пре-дист|Elytra prediction distance|Дистанція прогнозу елітри|Zasięg przewidywania elytry|Elytra-Vorhersagedistanz
+Elytra-наводка|Elytra targeting|Наведення елітри|Celowanie elytry|Elytra-Zielverfolgung
+FPS записи|Recording FPS|FPS запису|FPS nagrywania|Aufnahme-FPS
+HP цели|Target health|Здоров'я цілі|Zdrowie celu|Zielgesundheit
+HP-бар|Health bar|Смуга здоров'я|Pasek zdrowia|Gesundheitsleiste
+HurtTime-чек|Hurt time check|Перевірка часу шкоди|Sprawdzanie czasu obrażeń|Schadenszeit prüfen
+ItemBinds: ориентация|Item binds: orientation|Бінди предметів: орієнтація|Skróty przedmiotów: orientacja|Gegenstandstasten: Ausrichtung
+ItemBinds: показывать|Item binds: show|Бінди предметів: показувати|Skróty przedmiotów: pokaż|Gegenstandstasten: anzeigen
+Mace: активация|Mace: activation|Булава: активація|Buzdygan: aktywacja|Streitkolben: Aktivierung
+Mace: мин. бонус-урон|Mace: minimum bonus damage|Булава: мін. додаткова шкода|Buzdygan: min. dodatkowe obrażenia|Streitkolben: minimaler Bonusschaden
+Mace: мин. падение|Mace: minimum fall|Булава: мін. падіння|Buzdygan: min. upadek|Streitkolben: Mindestfallhöhe
+Neural: хоуминг|Neural: homing|Нейромережа: самонаведення|Sieć neuronowa: naprowadzanie|Neuronales Zielen: Nachführung
+NoFall при падении|No Fall while falling|Без шкоди під час падіння|Ochrona podczas upadku|Fallschutz beim Fallen
+Watermark: анимированный|Watermark: animated|Водяний знак: анімований|Znak wodny: animowany|Wasserzeichen: animiert
+Аврора|Aurora|Аврора|Zorza|Aurora
+Авто-Mace|Auto Mace|Автобулава|Automatyczny buzdygan|Automatischer Streitkolben
+Авто-поддержка|Automatic support|Автопідтримка|Automatyczne wsparcie|Automatische Unterstützung
+Авто-якорь|Auto anchor|Автоякір|Automatyczna kotwica|Automatischer Anker
+Активация|Activation|Активація|Aktywacja|Aktivierung
+Без префикса|Without prefix|Без префікса|Bez prefiksu|Ohne Präfix
+Без простоев|No idle time|Без простоїв|Bez przestojów|Ohne Leerlauf
+Без ротации|No rotation|Без поворотів|Bez obrotu|Ohne Drehung
+Белизна|Whiteness|Білизна|Biel|Weißanteil
+Беречь зачарованные|Keep enchanted items|Берегти зачаровані|Chroń zaklęte przedmioty|Verzauberte Gegenstände schonen
+Беречь сферу|Keep the sphere|Берегти сферу|Chroń sferę|Sphäre schonen
+Бинд (ручной)|Manual key bind|Бінд (ручний)|Ręczny skrót|Manuelle Tastenbelegung
+Бинд вихрь|Wind charge key bind|Бінд заряду вітру|Skrót ładunku wiatru|Windladungstaste
+Бинд колеса|Wheel key bind|Бінд колеса|Skrót koła|Radtaste
+Бинд опыт|Experience key bind|Бінд досвіду|Skrót doświadczenia|Erfahrungstaste
+Бинд перл|Pearl key bind|Бінд перлини|Skrót perły|Perlentaste
+Бинд снежок|Snowball key bind|Бінд сніжки|Skrót śnieżki|Schneeballtaste
+Бинд яйцо|Egg key bind|Бінд яйця|Skrót jajka|Eiertaste
+Блоки|Blocks|Блоки|Bloki|Blöcke
+Бонус-урон|Bonus damage|Додаткова шкода|Dodatkowe obrażenia|Bonusschaden
+Боссов/сек|Bosses per second|Босів за секунду|Bossów na sekundę|Bosse pro Sekunde
+Буфер Grim|Grim buffer|Буфер Grim|Bufor Grim|Grim-Puffer
+Быстро|Fast|Швидко|Szybko|Schnell
+В полёте|In flight|У польоті|W locie|Im Flug
+В руке|In hand|У руці|W ręce|In der Hand
+В цвет темы|Use theme color|У колір теми|Kolor motywu|Themenfarbe verwenden
+Верт. скорость|Vertical speed|Вертикальна швидкість|Prędkość pionowa|Vertikale Geschwindigkeit
+Вертикаль|Vertical|Вертикаль|Pion|Vertikal
+Вертикальная скорость|Vertical speed|Вертикальна швидкість|Prędkość pionowa|Vertikale Geschwindigkeit
+Вертикально|Vertically|Вертикально|Pionowo|Vertikal
+Взрывы|Explosions|Вибухи|Eksplozje|Explosionen
+Внутрь|Inward|Усередину|Do wewnątrz|Nach innen
+Внутрь + Наружу|Inward + outward|Усередину + назовні|Do wewnątrz + na zewnątrz|Nach innen + außen
+Возврат предмета|Restore item|Повернення предмета|Przywróć przedmiot|Gegenstand wiederherstellen
+Время до приземления|Time to landing|Час до приземлення|Czas do lądowania|Zeit bis zur Landung
+Время жизни|Lifetime|Час життя|Czas życia|Lebensdauer
+Время жизни (мс)|Lifetime (ms)|Час життя (мс)|Czas życia (ms)|Lebensdauer (ms)
+Время суток|Time of day|Час доби|Pora dnia|Tageszeit
+Всегда|Always|Завжди|Zawsze|Immer
+Выкл|Off|Вимк|Wył.|Aus
+Высота над тобой|Height above you|Висота над тобою|Wysokość nad tobą|Höhe über dir
+Высота падения|Fall height|Висота падіння|Wysokość upadku|Fallhöhe
+Вьюмодель|View model|Модель рук|Model rąk|Handmodell
+Голые|Unarmored|Без броні|Bez zbroi|Ohne Rüstung
+Горизонталь|Horizontal|Горизонталь|Poziom|Horizontal
+Горизонтальная скорость|Horizontal speed|Горизонтальна швидкість|Prędkość pozioma|Horizontale Geschwindigkeit
+Горизонтально|Horizontally|Горизонтально|Poziomo|Horizontal
+Гравитация|Gravity|Гравітація|Grawitacja|Schwerkraft
+Границы области|Region boundaries|Межі області|Granice obszaru|Bereichsgrenzen
+Громкость|Volume|Гучність|Głośność|Lautstärke
+Дальность кристалла|Crystal range|Дальність кристала|Zasięg kryształu|Kristallreichweite
+Двойная паутина|Double web|Подвійна павутина|Podwójna pajęczyna|Doppelte Spinnweben
+Дебаг-оверлей|Debug overlay|Налагоджувальна панель|Nakładka debugowania|Debug-Anzeige
+Делать подкоп|Dig underneath|Робити підкоп|Podkopuj|Untergraben
+Держать (сек)|Hold (seconds)|Тримати (с)|Trzymaj (sek.)|Halten (Sek.)
+Дистанция LOD предметов|Item LOD distance|Дистанція LOD предметів|Zasięg LOD przedmiotów|Gegenstand-LOD-Distanz
+Дистанция LOD сущностей|Entity LOD distance|Дистанція LOD сутностей|Zasięg LOD bytów|Entitäts-LOD-Distanz
+Дистанция голограмм|Hologram distance|Дистанція голограм|Zasięg hologramów|Hologrammdistanz
+Дистанция киллауры|Attack aura range|Дистанція аури атаки|Zasięg aury ataku|Angriffs-Aura-Reichweite
+Дистанция спавнеров|Spawner distance|Дистанція спавнерів|Zasięg spawnerów|Spawner-Distanz
+Дистанция тумана|Fog distance|Дистанція туману|Zasięg mgły|Nebeldistanz
+Длит. свинга|Swing duration|Тривалість замаху|Czas zamachu|Schwingdauer
+Длительность (мс)|Duration (ms)|Тривалість (мс)|Czas trwania (ms)|Dauer (ms)
+Дневное|Daytime|Денне|Dzienne|Tagsüber
+Добивание|Finishing hit|Добивання|Dobijanie|Letzter Treffer
+Забыть звук сервера|Forget server sound|Забути звук сервера|Zapomnij dźwięk serwera|Serverklang vergessen
+Задержка (мс)|Delay (ms)|Затримка (мс)|Opóźnienie (ms)|Verzögerung (ms)
+Задержка мс|Delay ms|Затримка мс|Opóźnienie ms|Verzögerung ms
+Задержка постановки мс|Placement delay ms|Затримка встановлення мс|Opóźnienie stawiania ms|Platzierungsverzögerung ms
+Задержка прыжка (тиков)|Jump delay (ticks)|Затримка стрибка (такти)|Opóźnienie skoku (ticki)|Sprungverzögerung (Ticks)
+Задержка удара мс|Hit delay ms|Затримка удару мс|Opóźnienie ataku ms|Angriffsverzögerung ms
+Заливка|Fill|Заливка|Wypełnienie|Füllung
+Замена|Replacement|Заміна|Zamiana|Ersatz
+Замораживать от взрывов|Freeze on explosions|Заморожувати від вибухів|Zamrażaj po eksplozjach|Bei Explosionen einfrieren
+Заморозка|Freeze|Заморожування|Zamrożenie|Einfrieren
+Заморозка, тиков|Freeze, ticks|Заморожування, такти|Zamrożenie, ticki|Einfrieren, Ticks
+Защиты|Protections|Захист|Zabezpieczenia|Schutzmaßnahmen
+Звук сервера|Server sound|Звук сервера|Dźwięk serwera|Serverklang
+Звуки|Sounds|Звуки|Dźwięki|Klänge
+Звёзды|Stars|Зірки|Gwiazdy|Sterne
+Игнорировать себя|Ignore self|Ігнорувати себе|Ignoruj siebie|Sich selbst ignorieren
+Игрок с булавой|Player with a mace|Гравець із булавою|Gracz z buzdyganem|Spieler mit Streitkolben
+Идеальный прыжок|Perfect jump|Ідеальний стрибок|Idealny skok|Perfekter Sprung
+Из инвентаря|From inventory|З інвентаря|Z ekwipunku|Aus dem Inventar
+Изменять дистанцию киллауры|Change attack aura range|Змінювати дистанцію аури атаки|Zmieniaj zasięg aury ataku|Angriffs-Aura-Reichweite ändern
+Интенсивность|Intensity|Інтенсивність|Intensywność|Intensität
+Интервал (мс)|Interval (ms)|Інтервал (мс)|Odstęp (ms)|Intervall (ms)
+Использовать шалкер|Use shulker box|Використовувати шалкер|Używaj shulkera|Shulkerkiste verwenden
+КПС|CPS|КПС|CPS|Klicks pro Sekunde
+Камера|Camera|Камера|Kamera|Kamera
+Каустик|Caustic|Каустик|Kaustyka|Kaustik
+Когда не достать|When out of reach|Коли не дістати|Poza zasięgiem|Außer Reichweite
+Контур|Outline|Контур|Obrys|Umriss
+Копирование сообщений|Copy messages|Копіювання повідомлень|Kopiowanie wiadomości|Nachrichten kopieren
+Коррекция движения|Movement correction|Корекція руху|Korekcja ruchu|Bewegungskorrektur
+Кривой ник|Malformed name|Некоректний нік|Nieprawidłowa nazwa|Ungültiger Name
+Крист-аура|Crystal aura|Аура кристалів|Aura kryształów|Kristall-Aura
+Кружки|Circles|Кола|Okręgi|Kreise
+Кружок|Circle|Коло|Okrąg|Kreis
+Кэш текста имён|Name text cache|Кеш тексту імен|Pamięć tekstu nazw|Namenstext-Cache
+Левая X|Left X|Ліва X|Lewa X|Links X
+Левая Y|Left Y|Ліва Y|Lewa Y|Links Y
+Левая Z|Left Z|Ліва Z|Lewa Z|Links Z
+Левая масштаб|Left scale|Масштаб лівої|Skala lewej|Skalierung links
+Легитное ломание|Legit breaking|Звичайне ламання|Naturalne kopanie|Regulärer Abbau
+Летнее небо|Summer sky|Літнє небо|Letnie niebo|Sommerhimmel
+Лимит взрывов|Explosion limit|Ліміт вибухів|Limit eksplozji|Explosionslimit
+Лимит игроков в табе|Player list limit|Ліміт гравців у списку|Limit listy graczy|Spielerlistenlimit
+Лимит карт|Map limit|Ліміт карт|Limit map|Kartenlimit
+Лимит команд|Team limit|Ліміт команд|Limit drużyn|Teamlimit
+Лимит отмен|Cancellation limit|Ліміт скасувань|Limit anulowań|Abbruchlimit
+Лимит целей скорборда|Scoreboard objective limit|Ліміт цілей табло|Limit celów tablicy|Anzeigetafellimit
+Лимит частиц|Particle limit|Ліміт частинок|Limit cząsteczek|Partikellimit
+Линии|Lines|Лінії|Linie|Linien
+Линия траектории|Trajectory line|Лінія траєкторії|Linia trajektorii|Flugbahnlinie
+Ловить момент|Time the hit|Ловити момент|Wyczuj moment|Treffer abstimmen
+Ломать сквозь стены|Break through walls|Ламати крізь стіни|Kop przez ściany|Durch Wände abbauen
+Ломать щит|Break shields|Ламати щит|Łam tarcze|Schilde brechen
+Макс. время ломания (тики)|Maximum break time (ticks)|Макс. час ламання (такти)|Maks. czas kopania (ticki)|Maximale Abbauzeit (Ticks)
+Макс. голограмм|Maximum holograms|Макс. голограм|Maks. hologramów|Maximale Hologramme
+Макс. урон по себе|Maximum self damage|Макс. шкода собі|Maks. obrażenia własne|Maximaler Eigenschaden
+Макс. урон себе|Maximum self damage|Макс. шкода собі|Maks. obrażenia własne|Maximaler Eigenschaden
+Маркер|Marker|Маркер|Znacznik|Markierung
+Мгновенный удар|Instant hit|Миттєвий удар|Natychmiastowy atak|Sofortiger Treffer
+Метка в точке падения|Landing marker|Мітка приземлення|Znacznik lądowania|Landemarkierung
+Мин. урон по цели|Minimum target damage|Мін. шкода цілі|Min. obrażenia celu|Minimaler Zielschaden
+Мин. урон цели|Minimum target damage|Мін. шкода цілі|Min. obrażenia celu|Minimaler Zielschaden
+Монстры|Monsters|Монстри|Potwory|Monster
+На что менять ник|Replacement name|Новий нік|Nazwa zastępcza|Ersatzname
+Название предмета (id), например gunpowder|Item ID, for example gunpowder|ID предмета, наприклад gunpowder|ID przedmiotu, np. gunpowder|Gegenstands-ID, z. B. gunpowder
+Направление|Direction|Напрямок|Kierunek|Richtung
+Наружу|Outward|Назовні|Na zewnątrz|Nach außen
+Настройки бокса|Box settings|Налаштування бокса|Ustawienia ramki|Boxeinstellungen
+Настройки тега|Name tag settings|Налаштування тега|Ustawienia etykiety|Namensschildeinstellungen
+Насыщенность|Saturation|Насиченість|Nasycenie|Sättigung
+Не бить если ешь|Pause attacks while eating|Не бити під час їжі|Nie atakuj podczas jedzenia|Beim Essen nicht angreifen
+Не вебать в паутине|Skip targets in webs|Не ставити в павутині|Pomijaj cele w pajęczynie|Ziele in Spinnweben überspringen
+Не взрывать ресы|Protect resources|Не підривати ресурси|Chroń zasoby|Ressourcen schützen
+Не взрывать себя|Avoid self damage|Не підривати себе|Unikaj obrażeń własnych|Eigenschaden vermeiden
+Не ставить паутину в себя|Do not web yourself|Не ставити павутину в себе|Nie stawiaj pajęczyny na sobie|Keine Spinnweben auf sich selbst
+Неймтег|Name tag|Іменний тег|Etykieta nazwy|Namensschild
+Норм. пинг = бот|Normal ping = bot|Звичайний пінг = бот|Normalny ping = bot|Normaler Ping = Bot
+Ночное|Nighttime|Нічне|Nocne|Nachts
+Ночной|Night|Нічний|Nocny|Nacht
+Обход Grim|Grim bypass|Обхід Grim|Omijanie Grim|Grim umgehen
+Обычно|Normal|Звичайно|Normalnie|Normal
+Одно окно|Single window|Одне вікно|Jedno okno|Ein Fenster
+Опасная высота|Dangerous height|Небезпечна висота|Niebezpieczna wysokość|Gefährliche Höhe
+Осмотр предмета|Inspect item|Огляд предмета|Obejrzyj przedmiot|Gegenstand ansehen
+Оставлять HP|Keep health|Залишати здоров'я|Zachowaj zdrowie|Gesundheit behalten
+Отжимать щит|Lower shield|Опускати щит|Opuszczaj tarczę|Schild senken
+Отключить от|Disable on|Вимкнути за|Wyłącz przy|Deaktivieren bei
+Отображать|Show|Показувати|Pokaż|Anzeigen
+Оффлайн-UUID|Offline UUID|Офлайн-UUID|UUID offline|Offline-UUID
+ПВП|PvP|ПВП|PvP|PvP
+Падение|Falling|Падіння|Upadek|Fallen
+Партиклы цели|Target particles|Частинки цілі|Cząsteczki celu|Zielpartikel
+Пауза|Pause|Пауза|Pauza|Pause
+Пауза в воде|Pause in water|Пауза у воді|Pauza w wodzie|Pause im Wasser
+Пауза при еде/копании|Pause while eating/mining|Пауза під час їжі/копання|Pauza podczas jedzenia/kopania|Pause beim Essen/Abbauen
+Первый|First|Перший|Pierwszy|Erster
+Пинг 0|Zero ping|Нульовий пінг|Zerowy ping|Ping 0
+Писать бот-трассы|Record bot traces|Записувати траси ботів|Nagrywaj ślady botów|Bot-Spuren aufzeichnen
+Питч|Pitch|Нахил|Ton|Tonhöhe
+Питч вкл|Enable pitch|Тон увімкнення|Ton włączenia|Tonhöhe beim Einschalten
+Питч выкл|Disable pitch|Тон вимкнення|Ton wyłączenia|Tonhöhe beim Ausschalten
+Плазма|Plasma|Плазма|Plazma|Plasma
+Плазма 2|Plasma 2|Плазма 2|Plazma 2|Plasma 2
+Плотность|Density|Щільність|Gęstość|Dichte
+Поворот|Rotation|Поворот|Obrót|Drehung
+Повороты Aura|Aura rotations|Повороти аури|Obroty aury|Aura-Drehungen
+Подброс|Launch|Підкидання|Podrzut|Hochschleudern
+Подброс ударом|Launch on hit|Підкидання ударом|Podrzut po ataku|Hochschleudern bei Treffer
+Подкоп без требования видимости блока|Dig without line of sight|Підкоп без видимості блока|Podkopuj bez widoczności bloku|Ohne Sichtlinie untergraben
+Подкоп под собой|Dig underneath yourself|Підкоп під собою|Podkopuj pod sobą|Unter sich selbst graben
+Показывать иконки зелий|Show potion icons|Показувати значки зілля|Pokaż ikony mikstur|Tranksymbole anzeigen
+Показывать наведение на цель в чистом окне|Show target tracking in clean window|Показувати наведення в чистому вікні|Pokaż śledzenie celu w czystym oknie|Zielverfolgung im sauberen Fenster anzeigen
+Показывать тело|Show body|Показувати тіло|Pokaż ciało|Körper anzeigen
+Показывать цель, ошибку и счётчики|Show target, error and counters|Показувати ціль, помилку та лічильники|Pokaż cel, błąd i liczniki|Ziel, Fehler und Zähler anzeigen
+Полоска|Bar|Смуга|Pasek|Leiste
+Полоска HP слева от 2D-бокса|Health bar left of 2D box|Смуга здоров'я ліворуч від 2D-бокса|Pasek zdrowia po lewej od ramki 2D|Gesundheitsleiste links der 2D-Box
+Порог (сек)|Threshold (seconds)|Поріг (с)|Próg (sek.)|Schwellenwert (Sek.)
+Порог HP|Health threshold|Поріг здоров'я|Próg zdrowia|Gesundheitsschwelle
+Порог дистанции|Distance threshold|Поріг дистанції|Próg odległości|Distanzschwelle
+Правая X|Right X|Права X|Prawa X|Rechts X
+Правая Y|Right Y|Права Y|Prawa Y|Rechts Y
+Правая Z|Right Z|Права Z|Prawa Z|Rechts Z
+Правая масштаб|Right scale|Масштаб правої|Skala prawej|Skalierung rechts
+Пре-дистанция|Prediction distance|Дистанція прогнозу|Zasięg przewidywania|Vorhersagedistanz
+Превышение|Overshoot|Перевищення|Przekroczenie|Überschreitung
+Предикт: макс. тиков|Prediction: maximum ticks|Прогноз: макс. тактів|Przewidywanie: maks. ticki|Vorhersage: maximale Ticks
+Предмет|Item|Предмет|Przedmiot|Gegenstand
+Пробахивать якорем|Explode anchors|Підривати якорі|Wysadzaj kotwice|Anker sprengen
+Прогноз|Prediction|Прогноз|Przewidywanie|Vorhersage
+Прослушать|Preview sound|Прослухати|Odsłuchaj|Klang anhören
+Прыжок для крита|Critical jump|Стрибок для криту|Skok krytyczny|Kritischer Sprung
+Прыжок при отдаче|Jump on knockback|Стрибок під час віддачі|Skok przy odrzucie|Bei Rückstoß springen
+Прятать друзей|Hide friends|Приховувати друзів|Ukryj znajomych|Freunde verbergen
+Прятать и ники из списка друзей|Also hide friends' names|Приховувати також імена друзів|Ukryj także nazwy znajomych|Auch Freundesnamen verbergen
+Прятать скин|Hide skin|Приховувати скін|Ukryj skórkę|Skin verbergen
+Пульсировать|Pulse|Пульсувати|Pulsuj|Pulsieren
+Путь|Path|Шлях|Ścieżka|Pfad
+Работать по сиду|Use world seed|Працювати за сідом|Używaj ziarna świata|Welt-Seed verwenden
+Радиус булавы|Mace radius|Радіус булави|Zasięg buzdyganu|Streitkolbenradius
+Радиус поиска|Search radius|Радіус пошуку|Zasięg wyszukiwania|Suchradius
+Радиус постановки|Placement radius|Радіус встановлення|Zasięg stawiania|Platzierungsradius
+Радиус сида (чанки)|Seed radius (chunks)|Радіус сіда (чанки)|Zasięg ziarna (chunki)|Seed-Radius (Chunks)
+Радиус скана|Scan radius|Радіус сканування|Zasięg skanowania|Scanradius
+Радиус стрелок|Arrow radius|Радіус стрілок|Promień strzałek|Pfeilradius
+Радиус цели|Target radius|Радіус цілі|Promień celu|Zielradius
+Разброс размера|Size variation|Розкид розміру|Zmienność rozmiaru|Größenvariation
+Разброс цвета|Color variation|Розкид кольору|Zmienność koloru|Farbvariation
+Размер стрелки|Arrow size|Розмір стрілки|Rozmiar strzałki|Pfeilgröße
+Разрешить позиции без прямой видимости|Allow positions without line of sight|Дозволити позиції без прямої видимості|Zezwól na pozycje bez widoczności|Positionen ohne Sichtlinie erlauben
+Режим бинда|Key bind mode|Режим бінда|Tryb skrótu|Tastenmodus
+Режим предикта|Prediction mode|Режим прогнозу|Tryb przewidywania|Vorhersagemodus
+Режимы|Modes|Режими|Tryby|Modi
+Резкий край силуэта поверх свечения|Sharp silhouette edge over glow|Чіткий край силуету поверх сяйва|Ostry obrys nad poświatą|Scharfer Umriss über dem Leuchten
+Рендер|Rendering|Відображення|Renderowanie|Darstellung
+Рисовать|Draw|Малювати|Rysuj|Zeichnen
+Ротация|Rotation|Обертання|Obrót|Rotation
+Рывок при ударе|Dash on hit|Ривок під час удару|Zryw po ataku|Sprint bei Treffer
+Сакура|Sakura|Сакура|Sakura|Sakura
+Сбрасывать спринт|Reset sprint|Скидати спринт|Resetuj sprint|Sprint zurücksetzen
+Сброс спринта|Sprint reset|Скидання спринту|Reset sprintu|Sprint-Reset
+Свап обратно|Swap back|Заміна назад|Zamień z powrotem|Zurückwechseln
+Свап элитры|Elytra swap|Заміна елітри|Zamiana elytry|Elytra-Wechsel
+Свапать элитру|Swap elytra|Міняти елітру|Zamieniaj elytrę|Elytra wechseln
+Себя|Self|Себе|Siebie|Sich selbst
+Северное сияние|Northern lights|Північне сяйво|Zorza polarna|Nordlicht
+Сила наклона|Tilt strength|Сила нахилу|Siła przechylenia|Neigungsstärke
+Сквозь стены|Through walls|Крізь стіни|Przez ściany|Durch Wände
+Скин-чек|Skin check|Перевірка скіна|Sprawdzanie skórki|Skin-Prüfung
+Скорость анимации|Animation speed|Швидкість анімації|Prędkość animacji|Animationsgeschwindigkeit
+Скорость вращения|Rotation speed|Швидкість обертання|Prędkość obrotu|Drehgeschwindigkeit
+Скорость по вертикали|Vertical speed|Вертикальна швидкість|Prędkość pionowa|Vertikale Geschwindigkeit
+Скорость скана|Scan speed|Швидкість сканування|Prędkość skanowania|Scangeschwindigkeit
+Скрыть голограммы|Hide holograms|Приховати голограми|Ukryj hologramy|Hologramme ausblenden
+Слать ротацию|Send rotations|Надсилати повороти|Wysyłaj obroty|Drehungen senden
+Слои|Layers|Шари|Warstwy|Ebenen
+Слои свечения|Glow layers|Шари сяйва|Warstwy poświaty|Leuchtebenen
+Случайный питч|Random pitch|Випадковий тон|Losowy ton|Zufällige Tonhöhe
+Смещение X|X offset|Зміщення X|Przesunięcie X|X-Versatz
+Смещение Y|Y offset|Зміщення Y|Przesunięcie Y|Y-Versatz
+Смещение Z|Z offset|Зміщення Z|Przesunięcie Z|Z-Versatz
+Смещение камеры|Camera offset|Зміщення камери|Przesunięcie kamery|Kameraversatz
+Сопротивление|Drag|Опір|Opór|Widerstand
+Спавн|Spawn|Поява|Pojawianie|Spawn
+Спиннер|Spinner|Спінер|Wirujący|Drehanzeige
+Ставить сразу после удара|Place immediately after hit|Ставити одразу після удару|Stawiaj natychmiast po ataku|Sofort nach Treffer platzieren
+Стоп при движении|Stop when moving|Зупиняти під час руху|Zatrzymaj podczas ruchu|Bei Bewegung stoppen
+Структуры|Structures|Структури|Struktury|Strukturen
+Сущности|Entities|Сутності|Byty|Entitäten
+Таб «»» = бот|Tab prefix » = bot|Префікс списку » = бот|Prefiks listy » = bot|Listenpräfix » = Bot
+Таб-чек|Player list check|Перевірка списку гравців|Sprawdzanie listy graczy|Spielerliste prüfen
+Таймер|Timer|Таймер|Zegar|Timer
+Текст в один проход|Single-pass text|Текст за один прохід|Tekst w jednym przebiegu|Text in einem Durchlauf
+Текстура|Texture|Текстура|Tekstura|Textur
+Тема|Theme|Тема|Motyw|Design
+Типы|Types|Типи|Typy|Typen
+Только в падении|Only while falling|Лише під час падіння|Tylko podczas upadku|Nur beim Fallen
+Только вне экрана|Only off-screen|Лише поза екраном|Tylko poza ekranem|Nur außerhalb des Bildschirms
+Только криты|Only critical hits|Лише критичні удари|Tylko trafienia krytyczne|Nur kritische Treffer
+Только на земле|Only on ground|Лише на землі|Tylko na ziemi|Nur am Boden
+Только опасная отдача|Only dangerous knockback|Лише небезпечна віддача|Tylko niebezpieczny odrzut|Nur gefährlicher Rückstoß
+Только попадания|Only confirmed hits|Лише влучання|Tylko trafienia|Nur bestätigte Treffer
+Только с аурой|Only with aura|Лише з аурою|Tylko z aurą|Nur mit Aura
+Только с хорусом|Only with chorus|Лише з хорусом|Tylko z owocem refrenusu|Nur mit Chorusfrucht
+Точность (блоков)|Accuracy (blocks)|Точність (блоки)|Dokładność (bloki)|Genauigkeit (Blöcke)
+Траектория летящих снарядов|Flying projectile trajectory|Траєкторія летючих снарядів|Trajektoria lecących pocisków|Flugbahn fliegender Projektile
+Траектория метательного в руке|Held projectile trajectory|Траєкторія снаряда в руці|Trajektoria pocisku w ręce|Flugbahn des gehaltenen Projektils
+Трейл|Trail|Шлейф|Smuga|Spur
+Убрать|Remove|Прибрати|Usuń|Entfernen
+Убрать ванильный звук удара|Remove vanilla hit sound|Прибрати звичайний звук удару|Usuń zwykły dźwięk ataku|Standard-Trefferklang entfernen
+Уведомления|Notifications|Сповіщення|Powiadomienia|Benachrichtigungen
+Уведомлять|Notify|Сповіщати|Powiadamiaj|Benachrichtigen
+Угрозы|Threats|Загрози|Zagrożenia|Bedrohungen
+Удалять из мира|Remove from world|Видаляти зі світу|Usuń ze świata|Aus der Welt entfernen
+Удар при отдаче|Attack on knockback|Удар під час віддачі|Atak przy odrzucie|Bei Rückstoß angreifen
+Умные криты|Smart critical hits|Розумні критичні удари|Inteligentne trafienia krytyczne|Intelligente kritische Treffer
+Упреждение|Lead targeting|Випередження|Wyprzedzenie|Vorhalten
+Уступать Crystal Aura|Yield to Crystal Aura|Поступатися аурі кристалів|Ustępuj aurze kryształów|Kristall-Aura Vorrang geben
+Учитывать абсорбцию|Include absorption|Враховувати поглинання|Uwzględnij absorpcję|Absorption berücksichtigen
+Фейерверк|Firework|Феєрверк|Fajerwerka|Feuerwerksrakete
+Физика|Physics|Фізика|Fizyka|Physik
+Фильтр высоты|Height filter|Фільтр висоти|Filtr wysokości|Höhenfilter
+Цвет акцента вместо белого|Accent color instead of white|Колір акценту замість білого|Kolor akcentu zamiast białego|Akzentfarbe statt Weiß
+Цвет по высоте|Color by height|Колір за висотою|Kolor według wysokości|Farbe nach Höhe
+Цвет темы|Theme color|Колір теми|Kolor motywu|Themenfarbe
+Целить вниз (взлёт)|Aim down (takeoff)|Цілити вниз (зліт)|Celuj w dół (start)|Nach unten zielen (Start)
+Шаг|Step|Крок|Krok|Schritt
+Шаг колеса|Wheel step|Крок колеса|Krok koła|Radschritt
+Шанс прозрачностью|Chance as opacity|Шанс прозорістю|Szansa przez przezroczystość|Wahrscheinlichkeit als Deckkraft
+Экспериментальный режим Windows: чистый захват и клиент поверх, только оконный режим|Experimental Windows mode: clean capture with client overlay, windowed only|Експериментальний режим Windows: чисте захоплення з клієнтом поверх, лише у вікні|Eksperymentalny tryb Windows: czyste przechwytywanie z nakładką, tylko w oknie|Experimenteller Windows-Modus: saubere Aufnahme mit Client-Overlay, nur im Fenster
+Элементы|Elements|Елементи|Elementy|Elemente
+Яма: макс. тиков|Pit: maximum ticks|Яма: макс. тактів|Dół: maks. ticki|Grube: maximale Ticks
+Яркость|Brightness|Яскравість|Jasność|Helligkeit
+LOD предметов|Item LOD|LOD предметів|LOD przedmiotów|Gegenstand-LOD
+LOD сущностей|Entity LOD|LOD сутностей|LOD bytów|Entitäts-LOD
+LOD частиц|Particle LOD|LOD частинок|LOD cząsteczek|Partikel-LOD
+Аддитивное|Additive|Адитивне|Addytywne|Additiv
+Анимация GUI по монитору|Match GUI animation to monitor|Анімація GUI за монітором|Animacja GUI według monitora|GUI-Animation an Monitor anpassen
+Бег|Sprinting|Біг|Sprint|Sprinten
+Без сортировки скинов|Skip skin sorting|Без сортування скінів|Bez sortowania skórek|Ohne Skin-Sortierung
+Боссы|Bosses|Боси|Bossowie|Bosse
+Бочки|Barrels|Бочки|Beczki|Fässer
+Ванильный крит|Vanilla critical hit|Звичайний крит|Standardowe trafienie krytyczne|Standardmäßiger kritischer Treffer
+Ванильный удар|Vanilla hit|Звичайний удар|Standardowy atak|Standardtreffer
+Вокруг|Around|Навколо|Wokół|Umgebung
+Вокруг игрока|Around player|Навколо гравця|Wokół gracza|Um den Spieler
+Волна|Wave|Хвиля|Fala|Welle
+Время|Time|Час|Czas|Zeit
+Выросшие растения|Grown crops|Дозрілі рослини|Dojrzałe rośliny|Ausgewachsene Pflanzen
+Голд-яблоки|Golden apples|Золоті яблука|Złote jabłka|Goldene Äpfel
+Голые игроки|Unarmored players|Гравці без броні|Gracze bez zbroi|Spieler ohne Rüstung
+Даун|Down|Вниз|W dół|Abwärts
+Дефолт|Default|Стандартний|Domyślny|Standard
+Жемчуг|Pearls|Перлини|Perły|Perlen
+Жидкости|Fluids|Рідини|Płyny|Flüssigkeiten
+Заливка + свечение|Fill + glow|Заливка + сяйво|Wypełnienie + poświata|Füllung + Leuchten
+Зелья|Potions|Зілля|Mikstury|Tränke
+Игнор|Ignore|Ігнорувати|Ignoruj|Ignorieren
+Импульс|Impulse|Імпульс|Impuls|Impuls
+Карты|Maps|Карти|Mapy|Karten
+Кастомный|Custom|Власний|Własny|Benutzerdefiniert
+Копание|Mining|Копання|Kopanie|Abbau
+Копьё|Spear|Спис|Włócznia|Speer
+Кристалл|Crystal|Кристал|Kryształ|Kristall
+Кэш ближних спавнеров|Nearby spawner cache|Кеш близьких спавнерів|Pamięć pobliskich spawnerów|Cache naher Spawner
+Кэш блок-сущностей|Block entity cache|Кеш блокових сутностей|Pamięć bloków bytów|Blockentitäts-Cache
+Кэш готового текста|Rendered text cache|Кеш готового тексту|Pamięć gotowego tekstu|Cache fertiger Texte
+Кэш поисков|Search cache|Кеш пошуку|Pamięć wyszukiwania|Suchcache
+Кэш раскладки текста|Text layout cache|Кеш розкладки тексту|Pamięć układu tekstu|Textlayout-Cache
+Кэш света частиц|Particle lighting cache|Кеш світла частинок|Pamięć światła cząsteczek|Partikellicht-Cache
+Мелкие ускорения|Minor optimizations|Дрібні прискорення|Drobne optymalizacje|Kleine Optimierungen
+Многопоточные частицы|Multithreaded particles|Багатопотокові частинки|Wielowątkowe cząsteczki|Mehrthread-Partikel
+Нажатие|Press|Натискання|Naciśnięcie|Drücken
+Не менять|Do not change|Не змінювати|Nie zmieniaj|Nicht ändern
+Оба|Both|Обидва|Oba|Beide
+Огнестойкость|Fire resistance|Вогнестійкість|Odporność na ogień|Feuerresistenz
+Опыт|Experience|Досвід|Doświadczenie|Erfahrung
+Отброс|Knockback|Відкидання|Odrzut|Rückstoß
+Партиклы|Particles|Частинки|Cząsteczki|Partikel
+При ударе|On hit|Під час удару|Przy ataku|Bei Treffer
+При ходьбе|When walking|Під час ходьби|Podczas chodzenia|Beim Gehen
+Простая физика частиц|Simple particle physics|Проста фізика частинок|Prosta fizyka cząsteczek|Einfache Partikelphysik
+Прочее|Miscellaneous|Інше|Inne|Sonstiges
+Прыжок|Jump|Стрибок|Skok|Sprung
+Пуш|Push|Поштовх|Pchnięcie|Stoß
+С сервера|From server|Із сервера|Z serwera|Vom Server
+Свайп|Swipe|Помах|Machnięcie|Wischen
+Сзади|Behind|Позаду|Z tyłu|Hinten
+Сила|Strength|Сила|Siła|Stärke
+Скорборд|Scoreboard|Табло|Tablica wyników|Anzeigetafel
+Скрыть мобов спавнеров|Hide spawner mobs|Приховати мобів спавнерів|Ukryj moby spawnerów|Spawner-Kreaturen ausblenden
+Слабый удар|Weak hit|Слабкий удар|Słaby atak|Schwacher Treffer
+Снежки|Snowballs|Сніжки|Śnieżki|Schneebälle
+Спавнера|Spawners|Спавнери|Spawnery|Spawner
+Спавнеры по тикам|Tick-based spawners|Спавнери за тактами|Spawnery według ticków|Tickbasierte Spawner
+Спереди|In front|Попереду|Z przodu|Vorne
+Спин|Spin|Обертання|Obrót|Drehen
+Стрелы|Arrows|Стріли|Strzały|Pfeile
+Стук в дверь|Door knock|Стук у двері|Pukanie do drzwi|Türklopfen
+Стэб|Stab|Укол|Pchnięcie ostrzem|Stich
+Сундуки|Chests|Скрині|Skrzynie|Truhen
+ТНТ-вагон|TNT minecart|Вагонетка з TNT|Wagonik TNT|TNT-Lore
+Таб|Player list|Список гравців|Lista graczy|Spielerliste
+Тип 1|Type 1|Тип 1|Typ 1|Typ 1
+Тип 2|Type 2|Тип 2|Typ 2|Typ 2
+Тотем|Totem|Тотем|Totem|Totem
+Тотемы|Totems|Тотеми|Totemy|Totems
+Трезубец|Trident|Тризуб|Trójząb|Dreizack
+Туман|Fog|Туман|Mgła|Nebel
+Удар|Hit|Удар|Atak|Treffer
+Удержание|Hold|Утримання|Przytrzymanie|Halten
+Установка|Placement|Встановлення|Stawianie|Platzierung
+Фиксированный|Fixed|Фіксований|Stały|Fest
+Хлыст|Whip|Батіг|Bicz|Peitsche
+Холст без отвязки|Canvas without detaching|Полотно без від'єднання|Płótno bez odłączania|Fläche ohne Ablösen
+Цель ауры|Aura target|Ціль аури|Cel aury|Aura-Ziel
+Шалкера|Shulker boxes|Шалкери|Shulkery|Shulkerkisten
+Эксибишн|Exhibition|Exhibition|Exhibition|Exhibition
+Эндер Сундуки|Ender chests|Ендер-скрині|Skrzynie Endu|Endertruhen
+Якорь|Anchor|Якір|Kotwica|Anker
+Паутина|Cobweb|Павутина|Pajęczyna|Spinnweben
+Перл|Pearl|Перлина|Perła|Perle
+Снежок|Snowball|Сніжка|Śnieżka|Schneeball
+Яйцо|Egg|Яйце|Jajko|Ei
+Вихрь|Wind charge|Заряд вітру|Ładunek wiatru|Windladung
+Элитра|Elytra|Елітра|Elytra|Elytra
+Оффхенд|Offhand|Друга рука|Druga ręka|Nebenhand
+Зелье|Potion|Зілля|Mikstura|Trank
+Ценные|Valuables|Цінні|Cenne|Wertvolle
