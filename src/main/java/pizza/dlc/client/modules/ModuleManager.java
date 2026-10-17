@@ -34,6 +34,7 @@ import pizza.dlc.client.modules.impl.combat.Velocity;
 import pizza.dlc.client.modules.impl.misc.AntiCrash;
 import pizza.dlc.client.modules.impl.misc.Assist;
 import pizza.dlc.client.modules.impl.misc.Blink;
+import pizza.dlc.client.modules.impl.misc.DevMode;
 import pizza.dlc.client.modules.impl.misc.FixHP;
 import pizza.dlc.client.modules.impl.misc.FreeCam;
 import pizza.dlc.client.modules.impl.misc.ItemScroller;
@@ -143,6 +144,7 @@ public class ModuleManager {
          new Blink(),
          new NeuroRecorder(),
          new FixHP(),
+         new DevMode(),
          new Optimization(),
          new ZakoOpt(),
          new ItemScroller(),
