@@ -39,3 +39,7 @@ Desktop.ini
 tools/.model-import-deps/
 tools/dance-references/*
 !tools/dance-references/README.md
+
+# Transfer package and local GitHub credentials
+/ReadySRC/
+/pat*.txt

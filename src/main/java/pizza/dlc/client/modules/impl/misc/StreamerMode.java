@@ -2,12 +2,12 @@ package pizza.dlc.client.modules.impl.misc;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.ComponentContents;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.network.chat.contents.PlainTextContents;
-import net.minecraft.network.chat.contents.TranslatableContents;
+import net.minecraft.network.chat.Style;
+import net.minecraft.util.FormattedCharSequence;
 import pizza.dlc.PizzaDLC;
 import pizza.dlc.api.settings.impl.BooleanSetting;
 import pizza.dlc.api.settings.impl.StringSetting;
@@ -30,146 +30,209 @@ public class StreamerMode extends Module {
    }
 
    public static String replace(String s) {
-      StreamerMode m = active();
-      if (m != null && s != null && !s.isEmpty()) {
-         List<String> names = m.names();
-         if (!containsAny(s, names)) {
+      try {
+         StreamerMode m = active();
+         if (m == null || s == null || s.isEmpty()) {
             return s;
          }
-
-         String r = m.repl();
-
-         for (String n : names) {
-            s = replaceWord(s, n, r);
+         List<String> names = m.names();
+         if (names.isEmpty()) {
+            return s;
          }
-
+         return StreamerNameFilter.replace(s, names, m.repl());
+      } catch (Throwable ignored) {
          return s;
       }
-
-      return s;
    }
 
    public static Component replace(Component c) {
-      StreamerMode m = active();
-      if (m != null && c != null) {
+      try {
+         StreamerMode m = active();
+         if (m == null || c == null) {
+            return c;
+         }
          List<String> names = m.names();
-         return !containsAny(c.getString(), names) ? c : rebuild(c, names, m.repl());
+         if (names.isEmpty()) {
+            return c;
+         }
+         List<int[]> norms = StreamerNameFilter.nameNorms(names);
+         if (norms.isEmpty()) {
+            return c;
+         }
+         return replaceComponent(c, norms, m.repl());
+      } catch (Throwable ignored) {
+         return c;
       }
-
-      return c;
    }
 
-   private static Component rebuild(Component c, List<String> names, String repl) {
-      ComponentContents contents = c.getContents();
-      MutableComponent out;
-      if (contents instanceof PlainTextContents ptc) {
-         String t = ptc.text();
-
-         for (String n : names) {
-            t = replaceWord(t, n, repl);
+   public static FormattedCharSequence replace(FormattedCharSequence seq) {
+      try {
+         StreamerMode m = active();
+         if (m == null || seq == null) {
+            return seq;
          }
+         List<String> names = m.names();
+         if (names.isEmpty()) {
+            return seq;
+         }
+         List<int[]> norms = StreamerNameFilter.nameNorms(names);
+         if (norms.isEmpty()) {
+            return seq;
+         }
+         return replaceSequence(seq, norms, m.repl());
+      } catch (Throwable ignored) {
+         return seq;
+      }
+   }
 
-         out = Component.literal(t);
-      } else if (contents instanceof TranslatableContents tc) {
-         Object[] args = tc.getArgs();
-         Object[] newArgs = new Object[args.length];
-
-         for (int i = 0; i < args.length; i++) {
-            Object a = args[i];
-            if (a instanceof Component ac) {
-               newArgs[i] = rebuild(ac, names, repl);
-            } else if (!(a instanceof String s)) {
-               newArgs[i] = a;
-            } else {
-               for (String n : names) {
-                  s = replaceWord(s, n, repl);
-               }
-
-               newArgs[i] = s;
+   /** Same as {@link #replace(Component)} but with precomputed norms (avoids recompute). */
+   static Component replaceComponent(Component c, List<int[]> norms, String repl) {
+      List<Style> styles = new ArrayList<>();
+      List<String> texts = new ArrayList<>();
+      StringBuilder plain = new StringBuilder();
+      c.visit((style, str) -> {
+         if (str != null && !str.isEmpty()) {
+            styles.add(style);
+            texts.add(str);
+            plain.append(str);
+         }
+         return Optional.empty();
+      }, Style.EMPTY);
+      String full = plain.toString();
+      if (full.isEmpty()) {
+         return c;
+      }
+      List<int[]> matches = StreamerNameFilter.findMatches(full, norms);
+      if (matches.isEmpty()) {
+         return c;
+      }
+      int[] starts = new int[texts.size()];
+      int acc = 0;
+      for (int i = 0; i < texts.size(); i++) {
+         starts[i] = acc;
+         acc += texts.get(i).length();
+      }
+      MutableComponent out = Component.empty();
+      boolean[] done = new boolean[matches.size()];
+      for (int r = 0; r < texts.size(); r++) {
+         String t = texts.get(r);
+         Style st = styles.get(r);
+         int rs = starts[r];
+         int re = rs + t.length();
+         int p = rs;
+         for (int k = 0; k < matches.size(); k++) {
+            int ms = matches.get(k)[0];
+            int me = matches.get(k)[1];
+            if (me <= rs || ms >= re) {
+               continue;
+            }
+            int cs = Math.max(ms, rs);
+            int ce = Math.min(me, re);
+            if (cs > p) {
+               out.append(Component.literal(t.substring(p - rs, cs - rs)).withStyle(st));
+            }
+            if (!done[k] && ms >= rs && ms < re) {
+               out.append(Component.literal(repl).withStyle(st));
+               done[k] = true;
+            }
+            if (ce > p) {
+               p = ce;
             }
          }
-
-         out = MutableComponent.create(new TranslatableContents(tc.getKey(), tc.getFallback(), newArgs));
-      } else {
-         out = MutableComponent.create(contents);
+         if (p < re) {
+            out.append(Component.literal(t.substring(p - rs)).withStyle(st));
+         }
       }
-
-      out.setStyle(c.getStyle());
-
-      for (Component sib : c.getSiblings()) {
-         out.append(rebuild(sib, names, repl));
-      }
-
       return out;
    }
 
-   private static String replaceWord(String s, String word, String repl) {
-      if (word != null && !word.isEmpty()) {
-         int i = 0;
-
-         while ((i = s.indexOf(word, i)) >= 0) {
-            int end = i + word.length();
-            boolean leftOk = i == 0 || !isNameChar(s.charAt(i - 1));
-            boolean rightOk = end >= s.length() || !isNameChar(s.charAt(end));
-            if (leftOk && rightOk) {
-               s = s.substring(0, i) + repl + s.substring(end);
-               i += repl.length();
-            } else {
-               i = end;
-            }
+   private static FormattedCharSequence replaceSequence(FormattedCharSequence seq, List<int[]> norms, String repl) {
+      List<Style> styles = new ArrayList<>();
+      List<StringBuilder> texts = new ArrayList<>();
+      StringBuilder plain = new StringBuilder();
+      boolean[] any = new boolean[1];
+      seq.accept((idx, style, cp) -> {
+         int n = texts.size();
+         if (n > 0 && styles.get(n - 1).equals(style)) {
+            texts.get(n - 1).appendCodePoint(cp);
+         } else {
+            styles.add(style);
+            StringBuilder sb = new StringBuilder();
+            sb.appendCodePoint(cp);
+            texts.add(sb);
          }
-
-         return s;
-      }
-
-      return s;
-   }
-
-   private static boolean isNameChar(char c) {
-      return c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z' || c >= '0' && c <= '9' || c == '_';
-   }
-
-   private static boolean containsAny(String s, List<String> names) {
-      for (String n : names) {
-         if (!containsWord(s, n)) continue;
-
+         plain.appendCodePoint(cp);
+         any[0] = true;
          return true;
+      });
+      if (!any[0]) {
+         return seq;
       }
-
-      return false;
-   }
-
-   private static boolean containsWord(String s, String word) {
-      if (word != null && !word.isEmpty()) {
-         int i = 0;
-
-         while ((i = s.indexOf(word, i)) >= 0) {
-            int end = i + word.length();
-            boolean leftOk = i == 0 || !isNameChar(s.charAt(i - 1));
-            boolean rightOk = end >= s.length() || !isNameChar(s.charAt(end));
-            if (leftOk && rightOk) {
-               return true;
+      String full = plain.toString();
+      List<int[]> matches = StreamerNameFilter.findMatches(full, norms);
+      if (matches.isEmpty()) {
+         return seq;
+      }
+      int[] starts = new int[texts.size()];
+      int acc = 0;
+      for (int i = 0; i < texts.size(); i++) {
+         starts[i] = acc;
+         acc += texts.get(i).length();
+      }
+      List<FormattedCharSequence> parts = new ArrayList<>();
+      boolean[] done = new boolean[matches.size()];
+      for (int r = 0; r < texts.size(); r++) {
+         String t = texts.get(r).toString();
+         Style st = styles.get(r);
+         int rs = starts[r];
+         int re = rs + t.length();
+         int p = rs;
+         for (int k = 0; k < matches.size(); k++) {
+            int ms = matches.get(k)[0];
+            int me = matches.get(k)[1];
+            if (me <= rs || ms >= re) {
+               continue;
             }
-
-            i = end;
+            int cs = Math.max(ms, rs);
+            int ce = Math.min(me, re);
+            if (cs > p) {
+               parts.add(FormattedCharSequence.forward(t.substring(p - rs, cs - rs), st));
+            }
+            if (!done[k] && ms >= rs && ms < re) {
+               parts.add(FormattedCharSequence.forward(repl, st));
+               done[k] = true;
+            }
+            if (ce > p) {
+               p = ce;
+            }
          }
-
-         return false;
+         if (p < re) {
+            parts.add(FormattedCharSequence.forward(t.substring(p - rs), st));
+         }
       }
-
-      return false;
+      if (parts.isEmpty()) {
+         return seq;
+      }
+      return parts.size() == 1 ? parts.get(0) : FormattedCharSequence.composite(parts);
    }
 
    private List<String> names() {
       List<String> out = new ArrayList<>();
       Minecraft mc = Minecraft.getInstance();
       if (mc.player != null) {
-         out.add(mc.player.getGameProfile().name());
+         String name = mc.player.getGameProfile().name();
+         if (name != null && !name.isEmpty()) {
+            out.add(name);
+         }
       }
 
       if (this.hideFriends.isEnabled()) {
          try {
-            out.addAll(PizzaDLC.getInstance().getFriendManager().getItems());
+            for (String f : PizzaDLC.getInstance().getFriendManager().getItems()) {
+               if (f != null && !f.isEmpty() && !out.contains(f)) {
+                  out.add(f);
+               }
+            }
          } catch (Exception ignored) {
          }
       }

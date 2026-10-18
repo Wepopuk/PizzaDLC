@@ -21,7 +21,7 @@ public class NameTagFeatureRendererMixin {
          target = "Lnet/minecraft/client/renderer/feature/NameTagFeatureRenderer;prepareText(Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/renderer/feature/NameTagFeatureRenderer$Submit;)Lnet/minecraft/client/gui/Font$PreparedText;"
       )
    )
-   private PreparedText pizzadlc$cachedPrepare(Font font, Submit s) {
+   private static PreparedText pizzadlc$cachedPrepare(Font font, Submit s) {
       Component text = StreamerMode.replace(s.text());
       return !Optimization.nameCacheOn()
          ? font.prepareText(text.getVisualOrderText(), s.x(), s.y(), s.color(), false, false, s.backgroundColor())
